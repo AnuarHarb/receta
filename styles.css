@@ -58,7 +58,7 @@ img {
   width: 600px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 40px;
   }
