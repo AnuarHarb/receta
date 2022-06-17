@@ -4,19 +4,66 @@ body {
   background-image: url("img/wallpaper2.jpeg");
   background-size: 200px;
   background-repeat: repeat;
+  font-size: 30px;
+}
+
+header {
+  /* tamaño */
+  height: 400px;
+  /*background */
+  background-color: bisque;
+  background-image: url("img/torta.jpeg");
+  background-size: cover;
+  background-position: center;
+  /*elementos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 80px;
   font-family: Impact;
   text-align: center;
   color: white;
+  padding: 20px 40px;
   text-shadow: 4px 7px 2px black;
-  border: 4px solid white;
+  border: 10px solid white;
   font-weight: bold;
+  backdrop-filter: blur(10px);
 }
 
-.ingredientes-contenedor {
+section {
   background-color: bisque;
-  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section p {
+  font-size: 30px;
+  width: 60%;
+}
+
+.contenedor {
+  border: 10px solid bisque;
+  margin: 20px 0 20px 0;
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+img {
+  width: 600px;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
 }
